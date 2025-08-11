@@ -1,0 +1,162 @@
+[0m09:50:01.748410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230566664B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000230558217F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023056666330>]}
+
+
+============================== 09:50:01.758556 | 7c52482c-8168-47e0-b6f8-c76ac8691ad0 ==============================
+[0m09:50:01.758556 [info ] [MainThread]: Running with dbt=1.10.4
+[0m09:50:01.758556 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\rnoveno\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:50:01.794976 [info ] [MainThread]: dbt version: 1.10.4
+[0m09:50:01.794976 [info ] [MainThread]: python version: 3.12.7
+[0m09:50:01.794976 [info ] [MainThread]: python path: C:\Users\rnoveno\AppData\Local\Programs\Python\Python312\python.exe
+[0m09:50:01.794976 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m09:50:02.498797 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:50:02.499797 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:50:02.499797 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:50:03.054209 [info ] [MainThread]: Using profiles dir at C:\Users\rnoveno\.dbt
+[0m09:50:03.056216 [info ] [MainThread]: Using profiles.yml file at C:\Users\rnoveno\.dbt\profiles.yml
+[0m09:50:03.056216 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\rnoveno\.dbt\dbt_project.yml
+[0m09:50:03.056216 [info ] [MainThread]: adapter type: databricks
+[0m09:50:03.056216 [info ] [MainThread]: adapter version: 1.10.4
+[0m09:50:03.056216 [info ] [MainThread]: Configuration:
+[0m09:50:03.056216 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:50:03.056216 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:50:03.056216 [info ] [MainThread]: Required dependencies:
+[0m09:50:03.056216 [debug] [MainThread]: Executing "git --help"
+[0m09:50:03.116067 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:50:03.116067 [debug] [MainThread]: STDERR: "b''"
+[0m09:50:03.116067 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:50:03.116067 [info ] [MainThread]: Connection:
+[0m09:50:03.116067 [info ] [MainThread]:   host: adb-3033515043864106.6.azuredatabricks.net
+[0m09:50:03.116067 [info ] [MainThread]:   http_path: sql/protocolv1/o/3033515043864106/0716-031103-d2steud5
+[0m09:50:03.116067 [info ] [MainThread]:   catalog: adventureworks
+[0m09:50:03.116067 [info ] [MainThread]:   schema: default
+[0m09:50:03.116067 [info ] [MainThread]: Registered adapter: databricks=1.10.4
+[0m09:50:03.650315 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m09:50:03.650315 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m09:50:03.651759 [debug] [MainThread]: Using databricks connection "debug"
+[0m09:50:03.651759 [debug] [MainThread]: On debug: select 1 as id
+[0m09:50:03.651759 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:50:05.807163 [debug] [MainThread]: Databricks adapter: Connection(session-id=26789e4c-f740-4cb0-8624-65cb09203924) - Created
+[0m09:50:17.611807 [debug] [MainThread]: SQL status: OK in 13.960 seconds
+[0m09:50:17.613821 [debug] [MainThread]: Databricks adapter: Cursor(session-id=26789e4c-f740-4cb0-8624-65cb09203924, command-id=ed97cfe8-456a-44c5-803e-8e7ef5daa2d2) - Closing
+[0m09:50:18.014853 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:50:18.014853 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:50:18.014853 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\rnoveno\.dbt\dbt_project.yml> not found
+
+[0m09:50:18.014853 [debug] [MainThread]: Command `dbt debug` failed at 09:50:18.014853 after 16.56 seconds
+[0m09:50:18.024387 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:50:18.024387 [debug] [MainThread]: On debug: Close
+[0m09:50:18.024387 [debug] [MainThread]: Databricks adapter: Connection(session-id=26789e4c-f740-4cb0-8624-65cb09203924) - Closing
+[0m09:50:18.728045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002305602F0E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023075675970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023075CF27B0>]}
+[0m09:50:18.728045 [debug] [MainThread]: Flushing usage events
+[0m09:50:19.987248 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:56:04.776317 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEE7287500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEE9197680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEEB2CA330>]}
+
+
+============================== 09:56:04.776317 | c41034b6-e6ac-467e-80c5-45ddea89967f ==============================
+[0m09:56:04.776317 [info ] [MainThread]: Running with dbt=1.10.4
+[0m09:56:04.776317 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\rnoveno\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:04.799905 [info ] [MainThread]: dbt version: 1.10.4
+[0m09:56:04.799905 [info ] [MainThread]: python version: 3.12.7
+[0m09:56:04.799905 [info ] [MainThread]: python path: C:\Users\rnoveno\AppData\Local\Programs\Python\Python312\python.exe
+[0m09:56:04.799905 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m09:56:11.353819 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:56:11.353819 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:56:11.353819 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:56:15.127913 [info ] [MainThread]: Using profiles dir at C:\Users\rnoveno\.dbt
+[0m09:56:15.128847 [info ] [MainThread]: Using profiles.yml file at C:\Users\rnoveno\.dbt\profiles.yml
+[0m09:56:15.129953 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\rnoveno\.dbt\dbt_project.yml
+[0m09:56:15.129953 [info ] [MainThread]: adapter type: databricks
+[0m09:56:15.130961 [info ] [MainThread]: adapter version: 1.10.4
+[0m09:56:15.130961 [info ] [MainThread]: Configuration:
+[0m09:56:15.131959 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m09:56:15.131959 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:56:15.132959 [info ] [MainThread]: Required dependencies:
+[0m09:56:15.132959 [debug] [MainThread]: Executing "git --help"
+[0m09:56:15.194389 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:56:15.194389 [debug] [MainThread]: STDERR: "b''"
+[0m09:56:15.194389 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:56:15.194389 [info ] [MainThread]: Connection:
+[0m09:56:15.194389 [info ] [MainThread]:   host: adb-3033515043864106.6.azuredatabricks.net
+[0m09:56:15.194389 [info ] [MainThread]:   http_path: sql/protocolv1/o/3033515043864106/0716-031103-d2steud5
+[0m09:56:15.194389 [info ] [MainThread]:   catalog: adventureworks
+[0m09:56:15.194389 [info ] [MainThread]:   schema: default
+[0m09:56:15.194389 [info ] [MainThread]: Registered adapter: databricks=1.10.4
+[0m09:56:15.717072 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m09:56:15.717072 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m09:56:15.717072 [debug] [MainThread]: Using databricks connection "debug"
+[0m09:56:15.717072 [debug] [MainThread]: On debug: select 1 as id
+[0m09:56:15.717072 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m09:56:16.922583 [debug] [MainThread]: Databricks adapter: Connection(session-id=6aea3196-21c3-488a-bf53-40c8016b4363) - Created
+[0m09:56:23.665727 [debug] [MainThread]: SQL status: OK in 7.950 seconds
+[0m09:56:23.665727 [debug] [MainThread]: Databricks adapter: Cursor(session-id=6aea3196-21c3-488a-bf53-40c8016b4363, command-id=279f6c4f-a592-4a6e-a58f-88242483c0c7) - Closing
+[0m09:56:23.915067 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m09:56:23.916060 [info ] [MainThread]: [31m1 check failed:[0m
+[0m09:56:23.916060 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\rnoveno\.dbt\dbt_project.yml> not found
+
+[0m09:56:23.917058 [debug] [MainThread]: Command `dbt debug` failed at 09:56:23.917058 after 19.33 seconds
+[0m09:56:23.917058 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m09:56:23.918059 [debug] [MainThread]: On debug: Close
+[0m09:56:23.918059 [debug] [MainThread]: Databricks adapter: Connection(session-id=6aea3196-21c3-488a-bf53-40c8016b4363) - Closing
+[0m09:56:24.286912 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEE7287500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE8B538230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CEFF9F9A00>]}
+[0m09:56:24.286912 [debug] [MainThread]: Flushing usage events
+[0m09:56:25.619312 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:46:44.478450 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B60053020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B60052D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B5FF828D0>]}
+
+
+============================== 17:46:44.488455 | 499f421e-33df-4639-b31a-375047876319 ==============================
+[0m17:46:44.488455 [info ] [MainThread]: Running with dbt=1.10.4
+[0m17:46:44.488455 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\rnoveno\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:46:44.515261 [info ] [MainThread]: dbt version: 1.10.4
+[0m17:46:44.515261 [info ] [MainThread]: python version: 3.12.7
+[0m17:46:44.515261 [info ] [MainThread]: python path: C:\Users\rnoveno\AppData\Local\Programs\Python\Python312\python.exe
+[0m17:46:44.515261 [info ] [MainThread]: os info: Windows-11-10.0.26100-SP0
+[0m17:46:50.999427 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:46:50.999427 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:46:50.999427 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:46:53.413936 [info ] [MainThread]: Using profiles dir at C:\Users\rnoveno\.dbt
+[0m17:46:53.413936 [info ] [MainThread]: Using profiles.yml file at C:\Users\rnoveno\.dbt\profiles.yml
+[0m17:46:53.413936 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\rnoveno\.dbt\dbt_project.yml
+[0m17:46:53.413936 [info ] [MainThread]: adapter type: databricks
+[0m17:46:53.413936 [info ] [MainThread]: adapter version: 1.10.4
+[0m17:46:53.413936 [info ] [MainThread]: Configuration:
+[0m17:46:53.413936 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:46:53.413936 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m17:46:53.413936 [info ] [MainThread]: Required dependencies:
+[0m17:46:53.413936 [debug] [MainThread]: Executing "git --help"
+[0m17:46:53.490621 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:46:53.490621 [debug] [MainThread]: STDERR: "b''"
+[0m17:46:53.490621 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:46:53.490621 [info ] [MainThread]: Connection:
+[0m17:46:53.490621 [info ] [MainThread]:   host: dbc-8d41a505-2058.cloud.databricks.com
+[0m17:46:53.490621 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/57e103ae57d59ff6
+[0m17:46:53.490621 [info ] [MainThread]:   catalog: adventureworks
+[0m17:46:53.496643 [info ] [MainThread]:   schema: raw_adworks_rich
+[0m17:46:53.496643 [info ] [MainThread]: Registered adapter: databricks=1.10.4
+[0m17:46:54.040163 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug, idle-time=0s, language=None, compute-name=) - Creating connection
+[0m17:46:54.040163 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m17:46:54.040163 [debug] [MainThread]: Using databricks connection "debug"
+[0m17:46:54.040163 [debug] [MainThread]: On debug: select 1 as id
+[0m17:46:54.040163 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:46:55.656484 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f06617-a2f2-1730-8d57-c65ef4ec2d4a) - Created
+[0m17:47:11.513115 [debug] [MainThread]: SQL status: OK in 17.470 seconds
+[0m17:47:11.513115 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f06617-a2f2-1730-8d57-c65ef4ec2d4a, command-id=01f06617-a345-1fcd-837d-49a0fce57700) - Closing
+[0m17:47:12.047504 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:47:12.049768 [info ] [MainThread]: [31m1 check failed:[0m
+[0m17:47:12.049768 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\rnoveno\.dbt\dbt_project.yml> not found
+
+[0m17:47:12.049768 [debug] [MainThread]: Command `dbt debug` failed at 17:47:12.049768 after 27.78 seconds
+[0m17:47:12.049768 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:47:12.049768 [debug] [MainThread]: On debug: Close
+[0m17:47:12.049768 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f06617-a2f2-1730-8d57-c65ef4ec2d4a) - Closing
+[0m17:47:12.397223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B60BC4620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B608E59D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028B7FC59190>]}
+[0m17:47:12.397223 [debug] [MainThread]: Flushing usage events
+[0m17:47:13.896100 [debug] [MainThread]: An error was encountered while trying to flush usage events

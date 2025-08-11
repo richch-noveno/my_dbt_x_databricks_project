@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: silver_addresses
+    description: "A model to transform bronze addresses into silver addresses"
+    columns:
+      - name: ADDRESS_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_customers
+    description: "A starter dbt model"
+    columns:
+      - name: CUSTOMER_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_persons
+    description: "A model to transform bronze persons into silver persons"
+    columns:
+      - name: PERSON_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_product_categories
+    description: "A model to transform bronze productcategories into silver productcategories"
+    columns:
+      - name: PRODUCT_CATEGORY_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  
+  - name: silver_product_descriptions
+    description: "A model to transform bronze productdescriptions into silver productdescriptions"  
+    columns:
+      - name: PRODUCT_DESCRIPTION_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_product_models
+    description: "A model to transform bronze productmodels into silver productmodels"
+    columns:
+      - name: PRODUCT_MODEL_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_products 
+    description: "A model to transform bronze products into silver products"
+    columns:
+      - name: PRODUCT_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null  
+
+  - name: silver_sales_orders
+    description: "A model to transform bronze salesorders into silver salesorders"
+    columns:
+      - name: SALES_ORDER_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: silver_sales_order_details
+    description: "A model to transform bronze salesorderdetails into silver salesorderdetails"
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - SALES_ORDER_ID
+            - SALES_ORDER_DETAIL_ID
+
+  
+  - name: silver_stores
+    description: "A model to transform bronze stores into silver stores"
+    columns:
+      - name: STORE_ID
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null

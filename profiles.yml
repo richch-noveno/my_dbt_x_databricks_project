@@ -1,0 +1,11 @@
+my_dbt_project_v1:
+  outputs:
+    dev:
+      catalog: adventureworks_dev
+      host: adb-1699501815905438.18.azuredatabricks.net
+      http_path: sql/protocolv1/o/1699501815905438/0721-131459-myzitvbn
+      schema: default
+      threads: 10
+      token: dapibf310ac98cac6e2adf64bd2397da43a5
+      type: databricks
+  target: dev

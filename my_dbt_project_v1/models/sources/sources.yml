@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: bronze_adworks_rich
+    database: adventureworks_dev
+    schema: bronze_adworks_rich
+    tables:
+      - name: addresses
+      - name: customers
+      - name: persons
+      - name: productcategories
+      - name: productdescriptions
+      - name: productmodels
+      - name: products
+      - name: salesorderdetails
+      - name: salesorders
+      - name: stores
